@@ -1,0 +1,31 @@
+<div class="mt-4">
+    <h3>Add course</h3>
+    
+    <form method="POST" action="/courses/store" class="mt-4">
+        <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" name="name" class="form-control" id="name">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="description" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+                <textarea name="description" class="form-control" id="description"></textarea>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="videoId" class="col-sm-2 col-form-label">videoId</label>
+            <div class="col-sm-10">
+                <input type="text" name="videoId" class="form-control" id="videoId">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="level" class="col-sm-2 col-form-label">Level</label>
+            <div class="col-sm-10">
+                <input type="text" name="level" class="form-control" id="level">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

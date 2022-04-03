@@ -1,0 +1,19 @@
+<div class="mt-4">
+    {{#with course}}
+    <div class="row">
+        <div class="col-lg-3">
+            <button style="margin: 10px">learn now</button>
+            <ul>
+                <li>{{this.level}}</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="col-lg-9">
+            <h2>{{this.name}}</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{this.videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>{{this.description}}</h5>
+        </div>
+    </div>
+    {{/with}}
+</div>
